@@ -320,7 +320,7 @@
                     <key>BundlePath</key>
                     <string>Lilu.kext</string>
                     <key>Comment</key>
-                    <string>Acidanthera plug-in manager</string>
+                    <string>V1.6.4 | Acidanthera plug-in manager</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -338,7 +338,7 @@
                     <key>BundlePath</key>
                     <string>VirtualSMC.kext</string>
                     <key>Comment</key>
-                    <string>Emulates the SMC chip found on real macs, without this macOS will not boot.</string>
+                    <string>V1.3.1 | Emulates the SMC chip found on real macs, without this macOS will not boot.</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -356,7 +356,7 @@
                     <key>BundlePath</key>
                     <string>CPUFriend.kext</string>
                     <key>Comment</key>
-                    <string>Frequency vector reading</string>
+                    <string>V1.2.6 | Frequency vector reading</string>
                     <key>Enabled</key>
                     <false/>
                     <key>ExecutablePath</key>
@@ -392,7 +392,7 @@
                     <key>BundlePath</key>
                     <string>WhateverGreen.kext</string>
                     <key>Comment</key>
-                    <string>Lilu plugin for managing both internal GPU and AMD GPUs</string>
+                    <string>V1.6.4 | Lilu plugin for managing both internal GPU and AMD GPUs</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -410,7 +410,7 @@
                     <key>BundlePath</key>
                     <string>SMCProcessor.kext</string>
                     <key>Comment</key>
-                    <string>Used for monitoring CPU temperature.</string>
+                    <string>V1.3.1 | Used for monitoring CPU temperature.</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -428,7 +428,7 @@
                     <key>BundlePath</key>
                     <string>SMCSuperIO.kext</string>
                     <key>Comment</key>
-                    <string>Used for monitoring fan speed.</string>
+                    <string>V1.3.1 | Used for monitoring fan speed.</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -446,7 +446,7 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>Lilu plug-in to manage on-board audio device</string>
+                    <string>V1.8.1 | Lilu plug-in to manage on-board audio device</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -464,7 +464,7 @@
                     <key>BundlePath</key>
                     <string>LucyRTL8125Ethernet.kext</string>
                     <key>Comment</key>
-                    <string>Realtek 2.5GbE Driver</string>
+                    <string>V1.1.0 | Realtek 2.5GbE Driver</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -482,7 +482,7 @@
                     <key>BundlePath</key>
                     <string>NVMeFix.kext</string>
                     <key>Comment</key>
-                    <string>Provides improved power management for non-Apple NVMe SSDs</string>
+                    <string>V1.1.0 | Provides improved power management for non-Apple NVMe SSDs</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -500,7 +500,7 @@
                     <key>BundlePath</key>
                     <string>USBPorts.kext</string>
                     <key>Comment</key>
-                    <string>Custom USB port map</string>
+                    <string>V1.0 | Custom USB port map</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -536,7 +536,7 @@
                     <key>BundlePath</key>
                     <string>CpuTopologyRebuild.kext</string>
                     <key>Comment</key>
-                    <string>Lilu plugin that optimizes heterogeneous core configuration</string>
+                    <string>V1.1.0 | Lilu plugin that optimizes heterogeneous core configuration</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -991,7 +991,7 @@
                 <key>PickerMode</key>
                 <string>External</string>
                 <key>PickerVariant</key>
-                <string>Auto</string>
+                <string>Acidanthera\GoldenGate</string>
                 <key>PollAppleHotKeys</key>
                 <false/>
                 <key>ShowPicker</key>
@@ -1072,6 +1072,33 @@
             </dict>
             <key>Serial</key>
             <dict>
+                <key>Custom</key>
+                <dict>
+                    <key>BaudRate</key>
+                    <integer>115200</integer>
+                    <key>ClockRate</key>
+                    <integer>1843200</integer>
+                    <key>DetectCable</key>
+                    <false/>
+                    <key>ExtendedTxFifoSize</key>
+                    <integer>64</integer>
+                    <key>FifoControl</key>
+                    <integer>7</integer>
+                    <key>LineControl</key>
+                    <integer>3</integer>
+                    <key>PciDeviceInfo</key>
+                    <data>/w==</data>
+                    <key>RegisterAccessWidth</key>
+                    <integer>8</integer>
+                    <key>RegisterBase</key>
+                    <integer>1016</integer>
+                    <key>RegisterStride</key>
+                    <integer>1</integer>
+                    <key>UseHardwareFlowControl</key>
+                    <false/>
+                    <key>UseMmio</key>
+                    <false/>
+                </dict>
                 <key>Init</key>
                 <false/>
                 <key>Override</key>
@@ -1236,10 +1263,10 @@
             <dict>
                 <key>AdviseFeatures</key>
                 <true/>
+                <key>MLB</key>
+                <string>C02810108QXJG368C</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
-                <key>MLB</key>
-                <string>** Enter Board Serial Number **</string>
                 <key>ProcessorType</key>
                 <integer>3841</integer>
                 <key>ROM</key>
@@ -1251,9 +1278,9 @@
                 <key>SystemProductName</key>
                 <string>iMacPro1,1</string>
                 <key>SystemSerialNumber</key>
-                <string>** Enter System Serial Number **</string>
+                <string>C02WD2Z0HX87</string>
                 <key>SystemUUID</key>
-                <string>** Enter System UUID **</string>
+                <string>F197EBA0-2D96-4805-A8F7-F8548462911B</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>

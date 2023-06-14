@@ -1019,7 +1019,7 @@
                 <key>TakeoffDelay</key>
                 <integer>0</integer>
                 <key>Timeout</key>
-                <integer>5</integer>
+                <integer>0</integer>
             </dict>
             <key>Debug</key>
             <dict>
@@ -1041,7 +1041,26 @@
                 <integer>3</integer>
             </dict>
             <key>Entries</key>
-            <array/>
+            <array>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Auxiliary</key>
+                    <false/>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Flavour</key>
+                    <string>Auto</string>
+                    <key>Name</key>
+                    <string>Zorin</string>
+                    <key>Path</key>
+                    <string>PciRoot(0x0)/Pci(0x6,0x0)/Pci(0x0,0x0)/NVMe(0x1,0E-0E-00-6F-71-A7-79-64)/HD(1,GPT,FB2E2948-941C-49F1-B8A7-B29B23BDEFF0,0x800,0x100000) /\EFI\ubuntu\grubx64.efi</string>
+                    <key>TextMode</key>
+                    <true/>
+                </dict>
+            </array>
             <key>Security</key>
             <dict>
                 <key>AllowSetDefault</key>
@@ -1740,6 +1759,18 @@
                     <false/>
                     <key>Path</key>
                     <string>ToggleSipEntry.efi</string>
+                </dict>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>LoadEarly</key>
+                    <false/>
+                    <key>Path</key>
+                    <string>ext4_x64.efi</string>
                 </dict>
             </array>
             <key>Input</key>
